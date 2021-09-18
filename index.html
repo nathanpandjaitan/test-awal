@@ -4,38 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar Javascript Object</title>
+    <title>Document</title>
 </head>
 <body>
-    <script>
-        function Angkot(supir,trayek,penumpang,kas) {
-            this.supir = supir;
-            this.trayek = trayek;
-            this.penumpang = penumpang;
-            this.kas = kas;
-
-            this.penumpangNaik = function(namaPenumpang) {
-                this.penumpang.push(namaPenumpang);
-                return this.penumpang;
-            }
-
-            this.penumpangTurun = function(namaPenumpang,bayar) {
-                if (this.penumpang.legth === 0) {
-                    alert('angkot masih kosong');
-                    return false;
-                }
-                for(var i = 0; i < this.penumpang.length; i++) {
-                    if(this.penumpang[i] == namaPenumpang) {
-                        this.penumpang[i] = undefined;
-                        this.kas += bayar;
-                        return this.penumpang;
-                    }
-                }
-            }
-        }
-
-        var angkot = new Angkot('Dzaki',['jogja','wates'], [], 0)
-        
-    </script>
+    <h1 class="h1">a</h1>
+    <script src="script.js"></script>
 </body>
 </html>
